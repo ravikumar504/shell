@@ -2,5 +2,5 @@
 
 person1=$1
 person2=$2
-echo "$1 : Hello $2"
-echo "$2 : Hi $1"
+echo "$person1 : Hello $person2"
+echo "$person2 : Hi $person1"
