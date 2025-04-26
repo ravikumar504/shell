@@ -2,4 +2,4 @@
 
 movies=("rrr" "devara" "pushpa")
 
-echo $movies
+echo ${movies}
