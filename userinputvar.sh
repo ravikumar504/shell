@@ -3,6 +3,11 @@
  
  read -s USERNAME
 
+ echo $USERNAME
+
  echo "enter ur password:"
 
  read -s PASSWORD
+
+ echo $PASSWORD
+
