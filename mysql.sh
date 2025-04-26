@@ -7,5 +7,12 @@ then
     echo "you need root access to execute this script"
     exit 1
 fi
-sudo dnf install mysql -y
+dnf install mysql -y
+
+if [ $? -ne 0]
+then
+    echo "mysql installing...failure"
+else
+    echo "mysql installing...success"
+fi
 
