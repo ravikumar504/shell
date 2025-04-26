@@ -7,7 +7,7 @@ then
     echo "you need root access to execute this script"
     exit 1
 fi
-dnf install mysqll -y
+dnf install mysql -y
 
 if [ $? -ne 0 ]
 then
