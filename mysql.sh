@@ -7,3 +7,4 @@ then
     echo "you need root access to execute this script"
 else
     dnf install mysql -y
+fi
