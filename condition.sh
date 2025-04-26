@@ -2,9 +2,8 @@
 
 number=$1
 
-if [ $number -ne 0 ]
+if [ $number -gt 190 ]
 then
-    echo "false"
+    echo "given number is greater than 190"
 else
-    echo "true"
-fi
+    echo "given number is less than or equal to 190"
