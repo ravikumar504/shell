@@ -7,5 +7,5 @@ then
     echo "you need root access to execute this script"
     
 fi
-dnf install mysql -y
+sudo dnf install mysql -y
 
