@@ -1,5 +1,5 @@
 #!/bin/bash
 
-logfile=$0
+logfile=$USER
 
 echo "$logfile"
