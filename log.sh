@@ -13,3 +13,4 @@ echo "$timestamp"
 filename="$logfile-$timestamp"
 
 echo "$filename"
+
