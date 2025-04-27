@@ -10,6 +10,6 @@ timestamp=$(date +%Y-%m-%d-%H-%M-%S)
 
 echo "$timestamp"
 
-filename="logfile-timestamp"
+filename="$logfile-$timestamp"
 
 echo "$filename"
