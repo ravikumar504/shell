@@ -1,5 +1,5 @@
 #!/bin/bash
 
-logfile=$USER
+logfile= $0 | cut -d "." -f1
 
 echo "$logfile"
