@@ -6,6 +6,6 @@ echo "$logfile"
 
 # output is test
 
-timestamp=$(date +%y-%m-%d-%h-%m-%s)
+timestamp=$(date +%Y-%m-%d-%H-%M-%S)
 
 echo "$timestamp"
