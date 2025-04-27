@@ -1,3 +1,5 @@
 #!/bin/bash
 
-log-file= $0
+logfile=$0
+
+echo "logfile"
