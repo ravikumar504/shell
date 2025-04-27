@@ -2,13 +2,14 @@
 
 userid=$(id -u)
 
-validate() {
+validate() 
+{
     if [ $1 -ne 0 ]
     then 
-        echo "installing mysql failure...."
+        echo "$2 failure...."
         exit 1
     else
-        echo "installing mysql.....success"
+        echo "$2 success....."
     fi
 }
 
@@ -23,7 +24,7 @@ dnf list installed mysql
 if [ $? -ne 0 ]
 then 
     dnf install mysql -y
-    validate $?
+    validate $? "Installing mysql"
     
 else 
     echo "mysql already installed...."
