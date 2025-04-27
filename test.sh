@@ -2,4 +2,4 @@
 
 logfile=$0
 
-echo "logfile"
+echo "$logfile"
