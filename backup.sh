@@ -44,7 +44,7 @@ then
     fi 
 
 else
-    echo "no files"
+    echo "no files older than 14 days"
 
 fi
 
