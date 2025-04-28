@@ -35,8 +35,10 @@ then
     then 
         while read -r line
         do 
-            echo $line
-        done <<<$group
+            echo " deleting file :$line"
+            rm -rf $line
+            echo "deleted $line"
+        done <<< $files
     else    
         echo "no zip"
     fi 
