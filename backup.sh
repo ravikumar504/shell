@@ -10,4 +10,16 @@ then
     exit 1
 else 
     echo "success"
+
 fi
+
+if [ ! -d $sourcedir]
+then 
+    echo "$sourcedir not exists.. please check "
+    exit 1
+fi
+
+if [ ! -d $destinationdir]
+then 
+    echo "$destinationdir doesnot exist ... please check "
+fi 
