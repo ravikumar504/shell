@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sourcedir=/home/ec2-user/log
+sourcedir=/c/devops/daws-82s/repos/shell/log
 
 filesdelete=(find $sourcedir name "*.log" -mtime +14)
 echo "$filesdelete"
