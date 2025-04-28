@@ -9,7 +9,6 @@ then
     echo "usage: <sourcedir> <destdir> <days>"
     exit 1
 else 
-    echo "success"
 
 fi
 
