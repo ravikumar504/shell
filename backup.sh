@@ -33,7 +33,10 @@ then
     find $sourcedir -name "*.log" -mtime +$days | zip -@ $group
     if [ -f $group ]
     then 
-        echo "zip created"
+        while read -r line
+        do 
+            echo $line
+        done <<<$group
     else    
         echo "no zip"
     fi 
