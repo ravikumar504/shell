@@ -23,4 +23,8 @@ then
 fi 
 
 files=$(find $sourcedir -name "*.log" -mtime +$days)
-echo "$files"
+
+if [ -n $files ]
+then 
+    echo "$files"
+fi
