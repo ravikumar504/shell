@@ -27,4 +27,9 @@ files=$(find $sourcedir -name "*.log" -mtime +$days)
 if [ -n "$files" ]
 then 
     echo "$files"
+    zip-files=$($sourcedir/app-logs-$timestamp.zip)
+    find $sourcedir -name "*.log" -mtime +$days | zip @ $zip-files
+else
+    echo "no files"
+
 fi
