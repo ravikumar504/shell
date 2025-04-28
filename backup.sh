@@ -8,7 +8,6 @@ if [ $# -ne 2 ]
 then 
     echo "usage: <sourcedir> <destdir> <days>"
     exit 1
-else 
 
 fi
 
