@@ -4,6 +4,8 @@ sourcedir=$1
 destinationdir=$2
 days=${3:-14}
 
+timestamp=$(date +%Y -%m -%d -%H -%M -%S)
+
 if [ $# -lt 2 ]
 then 
     echo "usage: <sourcedir> <destdir> <days>"
