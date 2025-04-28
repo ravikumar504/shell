@@ -4,7 +4,7 @@ sourcedir=$1
 destinationdir=$2
 days=${3:-14}
 
-if [ $# -ne 2 ]
+if [ $# -lt 2 ]
 then 
     echo "usage: <sourcedir> <destdir> <days>"
     exit 1
