@@ -31,7 +31,16 @@ then
     echo "$files"
     group="$destinationdir/app-logs-$timestamp.zip"
     find $sourcedir -name "*.log" -mtime +$days | zip -@ $group
+    if [ -f $group ]
+    then 
+        echo "zip created"
+    else    
+        echo "no zip"
+    fi 
+
 else
     echo "no files"
 
 fi
+
+
