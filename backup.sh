@@ -29,7 +29,7 @@ files=$(find $sourcedir -name "*.log" -mtime +$days)
 if [ -n "$files" ]
 then 
     echo "$files"
-    group="$sourcedir/app-logs-$timestamp.zip"
+    group="$destinationdir/app-logs-$timestamp.zip"
     find $sourcedir -name "*.log" -mtime +$days | zip -@ $group
 else
     echo "no files"
