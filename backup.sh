@@ -13,13 +13,13 @@ else
 
 fi
 
-if [ ! -d $sourcedir]
+if [ ! -d $sourcedir ]
 then 
     echo "$sourcedir not exists.. please check "
     exit 1
 fi
 
-if [ ! -d $destinationdir]
+if [ ! -d $destinationdir ]
 then 
     echo "$destinationdir doesnot exist ... please check "
 fi 
