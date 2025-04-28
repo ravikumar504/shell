@@ -5,7 +5,7 @@ sourcedir=/home/ec2-user/shell/log
 filesdelete=$(find $sourcedir -name "*.log" -mtime +14)
 echo "$filesdelete"
 
-while
-do read -r file
+while read -r file
+do 
     echo $file
 done <<< $filesdelete
