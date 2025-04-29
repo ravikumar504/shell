@@ -6,7 +6,7 @@
 
  echo "$USERNAME"
 
- if [ $? -ne 0 ]
+ if [ $? -eq 0 ]
  then 
     echo "user already cretaed"
     exit 1
