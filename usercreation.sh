@@ -10,12 +10,11 @@
  then 
     echo "user already cretaed"
     exit 1
-else 
-    sudo useradd $USERNAME
-    echo "user name added: $USERNAME"
     
 fi 
 
+sudo useradd $USERNAME
+echo "$USERNAME"
 
 read -s -p "Enter the password for $USERNAME: " password
 
