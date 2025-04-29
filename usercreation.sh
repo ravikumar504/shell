@@ -4,7 +4,7 @@
 
  read -s USERNAME
 
- echo "$USERNAME"
+ userid=$(id -u)
 
  if [ $? -eq 0 ]
  then 
