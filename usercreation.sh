@@ -4,7 +4,9 @@
 
  read -s USERNAME
 
- if [ id $USERNAME -ne 0 ]
+ echo "$USERNAME"
+
+ if [ $? -ne 0 ]
  then 
     echo "user already cretaed"
 else 
