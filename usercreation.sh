@@ -9,6 +9,9 @@ if id "$username" &>/dev/null; then
   exit 1
 fi
 
+# Create the user
+sudo useradd -m "$username"
+
 # Prompt for password
 read -s -p "Enter the password for $username: " password
 echo    # Move to a new line (hides the password input)
@@ -23,8 +26,7 @@ if [[ "$password" != "$password_confirm" ]]; then
   exit 1
 fi
 
-# Create the user
-sudo useradd -m "$username"
+
 
 # Set the password
 echo "$username:$password" | sudo chpasswd
