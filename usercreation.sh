@@ -12,4 +12,7 @@
 else 
     sudo useradd $USERNAME
     echo "user name added: $USERNAME"
+    
 fi 
+
+sudo passwd $USERNAME 
