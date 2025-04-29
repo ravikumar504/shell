@@ -11,4 +11,5 @@
     echo "user already cretaed"
 else 
     sudo useradd $USERNAME
+    echo "user name added: $USERNAME"
 fi 
