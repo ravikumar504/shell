@@ -12,23 +12,6 @@ fi
 # Create the user
 sudo useradd -m "$username"
 
-# Prompt for password
-read -s -p "Enter the password for $username: " password
-echo    # Move to a new line (hides the password input)
 
-# Confirm password
-read -s -p "Confirm the password: " password_confirm
-echo
-
-# Check if passwords match
-if [[ "$password" != "$password_confirm" ]]; then
-  echo "Passwords do not match."
-  exit 1
-fi
-
-
-
-# Set the password
-echo "$username:$password" | sudo chpasswd
 
 echo "User '$username' created successfully."
