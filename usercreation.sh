@@ -12,7 +12,7 @@ fi
 # Create the user
 sudo useradd -m "$username"
 
-if [ $? -ne 0 ]
+if [ $? -eq 0 ]
 then 
     echo "user created"
 else    
