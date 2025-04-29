@@ -14,4 +14,3 @@ sudo useradd -m "$username"
 
 
 
-echo "User '$username' created successfully."
